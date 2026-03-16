@@ -17,15 +17,15 @@ O SimulAI é inspirado no [MiroFish](https://github.com/666ghj/MiroFish). Você 
 
 O valor real desta ferramenta está em simular conversas que **nunca aconteceriam na vida real** mas cujos resultados nos ajudam a tomar decisões melhores.
 
-## 🎬 Exemplos de Casos de uso reais possíveis de simular:
+## 🎬 Exemplos de casos de uso reais possíveis de simular:
 
-| Cenário | O que torna impossível na vida real |
+| Cenário | Trazendo insights de conversas improváveis na vida real |
 |---------|-------------------------------------|
-| 🏥 **Município corta orçamento de saúde para investir em tecnologia** | Gestor de saúde, prefeito, paciente e engenheiro de TI jamais debatem isso abertamente |
-| 💰 **Empresa decide tornar público o salário de todos os funcionários** | RH, CEO, funcionário bem pago e mal pago nunca teriam essa conversa honesta na mesma sala |
-| 🚗 **Cidade proíbe carros no centro após as 18h** | Morador, entregador, dono de restaurante e ciclista têm interesses opostos e nunca se encontram |
-| 🏨 **Hospital usa IA para priorizar quem recebe leito de UTI** | Médico, familiar, gestor e filósofo de bioética nunca teriam esse debate abertamente |
-| 📱 **Escola pública bane celular inclusive fora do horário de aula** | Diretor, professor, aluno e pai nunca sentam juntos para decidir isso democraticamente |
+| 🏥 **Município corta orçamento de saúde para investir em tecnologia** | Gestor de saúde, prefeito, paciente e engenheiro de TI: Dificilmente teríamos um cenário ideal para estas personas debaterem isso abertamente |
+| 💰 **Empresa decide tornar público o salário de todos os funcionários** | RH, CEO, funcionário bem pago e mal pago dificilmente estariam todos juntos num mesmo local para essa conversa honesta, na mesma sala. Observar como isso ocorre pode dar insights interessantes. |
+| 🚗 **Cidade proíbe carros no centro após as 18h** | Morador, entregador, dono de restaurante e ciclista têm interesses opostos e promover um debate como esse seria algo interessante de se observar |
+| 🏨 **Hospital usa IA para priorizar quem recebe leito de UTI** | Médico, familiar, gestor e filósofo de bioética dificilmente teriam um debate como esse abertamente |
+| 📱 **Escola pública bane celular inclusive fora do horário de aula** | Diretor, professor, aluno e pai: Como prever o resultado democrático em um cenário delicado como esse? |
 
 Tudo com interface visual amigável no navegador. 🖥️
 
