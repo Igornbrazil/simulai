@@ -1,8 +1,3 @@
-Seleciona tudo no editor (**Command ⌘ + A**), apaga, e cola isso:Cole esse conteúdo no editor do GitHub:
-
----
-
-```
 # ⚡ SimulAI — Motor de Simulação com Agentes de IA
 
 > Simule qualquer cenário do mundo real com agentes de IA que debatem, discordam e evoluem suas posições — tudo rodando localmente, sem custos.
@@ -27,14 +22,11 @@ O valor real está em simular conversas que **nunca aconteceriam na vida real** 
 
 | Cenário | Por que é impossível na vida real |
 |---------|-----------------------------------|
-| Cenário | Trazendo insights de conversas improváveis na vida real |
-|---------|-------------------------------------|
-| 🏥 **Município corta orçamento de saúde para investir em tecnologia** | Gestor de saúde, prefeito, paciente e engenheiro de TI: Dificilmente teríamos um cenário ideal para estas personas debaterem isso abertamente |
-| 💰 **Empresa decide tornar público o salário de todos os funcionários** | RH, CEO, funcionário bem pago e mal pago dificilmente estariam todos juntos num mesmo local para essa conversa honesta, na mesma sala. Observar como isso ocorre pode dar insights interessantes. |
-| 🚗 **Cidade proíbe carros no centro após as 18h** | Morador, entregador, dono de restaurante e ciclista têm interesses opostos e promover um debate como esse seria algo interessante de se observar |
-| 🏨 **Hospital usa IA para priorizar quem recebe leito de UTI** | Médico, familiar, gestor e filósofo de bioética dificilmente teriam um debate como esse abertamente |
-| 📱 **Escola pública bane celular inclusive fora do horário de aula** | Diretor, professor, aluno e pai: Como prever o resultado democrático em um cenário delicado como esse? |
-
+| 🏥 **Município corta orçamento de saúde para investir em tecnologia** | Gestor de saúde, prefeito, paciente e engenheiro de TI jamais debatem isso abertamente |
+| 💰 **Empresa decide tornar público o salário de todos os funcionários** | RH, CEO, funcionário bem pago e mal pago nunca teriam essa conversa honesta na mesma sala |
+| 🚗 **Cidade proíbe carros no centro após as 18h** | Morador, entregador, dono de restaurante e ciclista têm interesses opostos e nunca se encontram |
+| 🏨 **Hospital usa IA para priorizar quem recebe leito de UTI** | Médico, familiar, gestor e filósofo de bioética nunca teriam esse debate abertamente |
+| 📱 **Escola pública bane celular inclusive fora do horário de aula** | Diretor, professor, aluno e pai nunca sentam juntos para decidir isso democraticamente |
 
 ---
 
@@ -118,7 +110,7 @@ http://localhost:3000
 ### Pagos (APIs externas — opcional)
 
 | Provedor | Modelos | Como usar |
-|----------|---------|-----------| 
+|----------|---------|-----------|
 | **OpenAI** | GPT-4o, GPT-4o-mini | Informe sua API Key na interface |
 | **Anthropic** | Claude 3 Haiku/Sonnet/Opus | Informe sua API Key na interface |
 | **Google** | Gemini 1.5 Flash/Pro | Informe sua API Key na interface |
@@ -187,9 +179,9 @@ import styled from './Layout.module.css';
 ---
 
 ### ❌ "SyntaxError: invalid syntax" no backend
-O TextEdit salvou texto de instrução dentro do arquivo Python. Nunca use o TextEdit para editar arquivos `.py`.
+O TextEdit salvou texto de instrução dentro do arquivo Python.
 
-**Solução:** Use o Terminal:
+**Solução:** Use sempre o Terminal para editar arquivos `.py`:
 ```bash
 cat > backend/models/llm_provider.py << 'EOF'
 # cole o conteúdo aqui
@@ -255,8 +247,3 @@ MIT — use, modifique e distribua livremente.
 ---
 
 Feito com ❤️ — inspirado no [MiroFish](https://github.com/666ghj/MiroFish) de Guo Hangjiang ([@666ghj](https://github.com/666ghj)).
-```
-
----
-
-Depois clica em **"Commit changes"** lá embaixo. Me avisa quando salvar! 😊
