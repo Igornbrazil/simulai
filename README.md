@@ -1,24 +1,32 @@
+Seleciona tudo no editor (**Command ⌘ + A**), apaga, e cola isso:Cole esse conteúdo no editor do GitHub:
+
+---
+
+```
 # ⚡ SimulAI — Motor de Simulação com Agentes de IA
 
 > Simule qualquer cenário do mundo real com agentes de IA que debatem, discordam e evoluem suas posições — tudo rodando localmente, sem custos.
-> 💡 Algumas conversas nunca acontecem na vida real porque as pessoas certas nunca estão na mesma sala. O SimulAI coloca elas lá.
+
+💡 *Algumas conversas nunca acontecem na vida real porque as pessoas certas nunca estão na mesma sala. O SimulAI coloca elas lá.*
 
 ---
 
 ## 🎯 O que é o SimulAI?
 
-O SimulAI é inspirado no [MiroFish](https://github.com/666ghj/MiroFish). Você descreve um cenário (ex: *"Uma empresa anuncia demissões em massa por causa de IA"*), e o sistema:
+O SimulAI é inspirado no [MiroFish](https://github.com/666ghj/MiroFish), criado por Guo Hangjiang. Você descreve um cenário e o sistema:
 
 1. **Gera agentes** com personalidades, históricos e posições diversas
 2. **Simula debates** em múltiplas rodadas, onde os agentes interagem
 3. **Gera um relatório** com insights, previsões e recomendações
 
+---
+
 ## 💡 Por que o SimulAI é único?
 
-O valor real desta ferramenta está em simular conversas que **nunca aconteceriam na vida real** mas cujos resultados nos ajudam a tomar decisões melhores.
+O valor real está em simular conversas que **nunca aconteceriam na vida real** — mas cujos resultados nos ajudam a tomar decisões melhores.
 
-## 🎬 Exemplos de casos de uso reais possíveis de simular:
-
+| Cenário | Por que é impossível na vida real |
+|---------|-----------------------------------|
 | Cenário | Trazendo insights de conversas improváveis na vida real |
 |---------|-------------------------------------|
 | 🏥 **Município corta orçamento de saúde para investir em tecnologia** | Gestor de saúde, prefeito, paciente e engenheiro de TI: Dificilmente teríamos um cenário ideal para estas personas debaterem isso abertamente |
@@ -27,15 +35,12 @@ O valor real desta ferramenta está em simular conversas que **nunca aconteceria
 | 🏨 **Hospital usa IA para priorizar quem recebe leito de UTI** | Médico, familiar, gestor e filósofo de bioética dificilmente teriam um debate como esse abertamente |
 | 📱 **Escola pública bane celular inclusive fora do horário de aula** | Diretor, professor, aluno e pai: Como prever o resultado democrático em um cenário delicado como esse? |
 
-Tudo com interface visual amigável no navegador. 🖥️
 
 ---
 
 ## 🚀 Como instalar e rodar
 
 ### Pré-requisitos
-
-Você vai precisar de apenas **duas coisas**:
 
 | Requisito | Link | Para quê |
 |-----------|------|----------|
@@ -46,45 +51,49 @@ Você vai precisar de apenas **duas coisas**:
 
 ### Passo 1 — Instalar o Ollama
 
-1. Acesse [ollama.com](https://ollama.com) e baixe o instalador para o seu sistema
-2. Instale normalmente (como qualquer programa)
-3. Abra o **Terminal** e baixe o modelo de IA:
+1. Acesse [ollama.com](https://ollama.com) e baixe o instalador
+2. Instale normalmente
+3. Abra o Terminal e baixe o modelo:
 
 ```bash
 ollama pull llama3
 ```
 
-> ⏳ Esse download pode demorar alguns minutos dependendo da sua internet (~4GB)
-
-Para testar se funcionou:
-```bash
-ollama run llama3 "Olá, tudo bem?"
-```
+> ⏳ ~4GB de download. Pode demorar alguns minutos.
 
 ---
 
 ### Passo 2 — Instalar o Docker Desktop
 
 1. Acesse [docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop/)
-2. Baixe e instale para o seu sistema operacional
-3. Abra o Docker Desktop e aguarde ele iniciar (ícone na barra de tarefas)
+2. Baixe e instale para o seu sistema
+3. Abra o Docker Desktop e aguarde iniciar
 
 ---
 
-### Passo 3 — Baixar e rodar o SimulAI
+### Passo 3 — Rodar o SimulAI
 
-1. Baixe este projeto (o arquivo ZIP ou clone o repositório)
-2. Abra o **Terminal** dentro da pasta do projeto
-3. Execute:
+> ⚠️ **Importante:** Sempre siga essa ordem exata ao iniciar o SimulAI.
 
+**1.** Abra o **Docker Desktop** e aguarde a baleia 🐳 aparecer na barra de menu
+
+**2.** Abra o **Terminal** e rode:
+```bash
+ollama serve
+```
+> Deixe esse Terminal aberto. Não feche.
+
+**3.** Abra uma **segunda aba** no Terminal e navegue até a pasta do projeto:
+```bash
+cd ~/Documents/simulai
+```
+
+**4.** Suba o projeto:
 ```bash
 docker-compose up --build
 ```
 
-> ⏳ Na primeira vez, pode demorar alguns minutos para baixar as dependências
-
-4. Quando aparecer a mensagem `simulai-frontend | Compiled successfully`, abra o navegador em:
-
+**5.** Quando aparecer `webpack compiled successfully`, abra no navegador:
 ```
 http://localhost:3000
 ```
@@ -109,55 +118,107 @@ http://localhost:3000
 ### Pagos (APIs externas — opcional)
 
 | Provedor | Modelos | Como usar |
-|----------|---------|-----------|
+|----------|---------|-----------| 
 | **OpenAI** | GPT-4o, GPT-4o-mini | Informe sua API Key na interface |
 | **Anthropic** | Claude 3 Haiku/Sonnet/Opus | Informe sua API Key na interface |
 | **Google** | Gemini 1.5 Flash/Pro | Informe sua API Key na interface |
-
-> 💡 Com Ollama, **não há nenhum custo**. Com APIs externas, você paga conforme o uso.
 
 ---
 
 ## 🧭 Como usar
 
-### Criar uma simulação
-
 1. Acesse `http://localhost:3000`
-2. **Descreva o cenário** no campo de texto (quanto mais detalhado, melhor)
-3. Ajuste o número de **agentes** (2–10) e **rodadas** (1–5)
+2. **Descreva o cenário** no campo de texto
+3. Ajuste **agentes** (2–10) e **rodadas** (1–5)
 4. Escolha o **modelo de IA**
 5. Clique em **⚡ Iniciar Simulação**
 
-### Durante a simulação
-
-- Acompanhe os **agentes** sendo criados no painel esquerdo
-- Veja as **mensagens** aparecerem em tempo real
-- Cada cor/emoji representa um agente diferente
-
-### Após a simulação
-
-- Clique na aba **📊 Relatório** para ver:
-  - Resumo executivo
-  - Pontos de consenso e conflito
-  - Previsões e probabilidades
-  - Recomendações práticas
+### Dicas para melhores resultados
+- Use **5–8 agentes** para debates mais ricos
+- **3 rodadas** costumam gerar insights suficientes
+- Seja específico no cenário (país, setor, contexto)
+- Modelos maiores (llama3, mistral) geram respostas mais elaboradas
 
 ---
 
-## 💡 Dicas de uso
+## ❓ Problemas comuns e soluções
 
-**Cenários que funcionam bem:**
-- Decisões empresariais: *"Uma empresa decide adotar home office permanente"*
-- Políticas públicas: *"O governo propõe taxação de grandes fortunas"*
-- Tendências de mercado: *"Surgimento de um novo competidor no mercado de e-commerce"*
-- Dilemas éticos: *"Uma empresa de saúde vende dados de pacientes para pesquisa"*
-- Inovações tecnológicas: *"Carros autônomos se tornam obrigatórios nas cidades"*
+### ❌ "All connection attempts failed"
+Este é o erro mais comum. Significa que o backend não consegue se comunicar com o Ollama.
 
-**Para melhores resultados:**
-- Seja específico sobre o contexto (país, setor, escala)
-- Use 5–7 agentes para debates mais ricos
-- 3 rodadas costumam gerar insights suficientes
-- Modelos maiores (llama3, mistral) geram respostas mais elaboradas
+**Solução:**
+1. Verifique se o Ollama está rodando: abra o Terminal e execute `ollama serve`
+2. Verifique se o Docker Desktop está aberto
+3. Pare e reinicie tudo na ordem correta:
+```bash
+docker-compose down
+ollama serve          # Terminal 1 — deixe aberto
+docker-compose up     # Terminal 2
+```
+
+---
+
+### ❌ "no configuration file provided: not found"
+O Terminal não está na pasta correta do projeto.
+
+**Solução:**
+```bash
+cd ~/Documents/simulai
+docker-compose up --build
+```
+
+---
+
+### ❌ "dependency failed to start: container simulai-backend is unhealthy"
+O healthcheck está travando o container.
+
+**Solução:** Verifique se o `docker-compose.yml` **não** contém a seção `healthcheck`. Se contiver, remova-a.
+
+---
+
+### ❌ "Module not found: Error: Can't resolve './Layout.module.css'"
+O arquivo `Layout.js` tem uma importação inválida.
+
+**Solução:** Abra `frontend/src/components/Layout.js` e remova a linha:
+```js
+import styled from './Layout.module.css';
+```
+
+---
+
+### ❌ "SyntaxError: invalid syntax" no backend
+O TextEdit salvou texto de instrução dentro do arquivo Python. Nunca use o TextEdit para editar arquivos `.py`.
+
+**Solução:** Use o Terminal:
+```bash
+cat > backend/models/llm_provider.py << 'EOF'
+# cole o conteúdo aqui
+EOF
+```
+
+---
+
+### ❌ Simulação trava sem resposta
+- Modelos maiores demoram mais — aguarde (pode levar 10-15 minutos com 8 agentes)
+- Verifique se seu computador tem RAM suficiente para o modelo
+- Tente com menos agentes (2-3) e 1 rodada para testar
+
+---
+
+### ❌ Safari não consegue conectar
+Verifique se o Docker está rodando e se os containers estão ativos:
+```bash
+docker ps
+```
+Você deve ver `simulai-backend` e `simulai-frontend` com status `Up`.
+
+---
+
+## 🔄 Como parar o SimulAI
+
+```bash
+docker-compose down
+```
 
 ---
 
@@ -182,39 +243,7 @@ simulai/
 │   │       └── Layout.js     # Layout base
 │   └── package.json
 ├── docker-compose.yml
-├── start.sh                 # Alternativa sem Docker
 └── README.md
-```
-
----
-
-## ❓ Problemas comuns
-
-### "Não consigo conectar ao Ollama"
-- Verifique se o Ollama está rodando: abra o Terminal e execute `ollama list`
-- No macOS/Windows com Docker, o backend acessa o Ollama via `host.docker.internal`
-- Certifique-se de que baixou o modelo: `ollama pull llama3`
-
-### "O Docker não sobe"
-- Verifique se o Docker Desktop está aberto e rodando
-- Tente: `docker-compose down && docker-compose up --build`
-
-### "A simulação trava"
-- Modelos maiores demoram mais para responder — aguarde
-- Verifique se o seu computador tem RAM suficiente para o modelo escolhido
-
-### "Erro de API Key"
-- Verifique se a chave foi digitada corretamente
-- Certifique-se de ter saldo/créditos na conta do provedor
-
----
-
-## 🔄 Parar o SimulAI
-
-No terminal onde está rodando, pressione `Ctrl + C` e execute:
-
-```bash
-docker-compose down
 ```
 
 ---
@@ -225,4 +254,9 @@ MIT — use, modifique e distribua livremente.
 
 ---
 
-Feito com ❤️ — inspirado no [MiroFish](https://github.com/666ghj/MiroFish) de Guo Hangjiang.
+Feito com ❤️ — inspirado no [MiroFish](https://github.com/666ghj/MiroFish) de Guo Hangjiang ([@666ghj](https://github.com/666ghj)).
+```
+
+---
+
+Depois clica em **"Commit changes"** lá embaixo. Me avisa quando salvar! 😊
