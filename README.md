@@ -1,6 +1,7 @@
 # ⚡ SimulAI — Motor de Simulação com Agentes de IA
 
 > Simule qualquer cenário do mundo real com agentes de IA que debatem, discordam e evoluem suas posições — tudo rodando localmente, sem custos.
+> 💡 Algumas conversas nunca acontecem na vida real porque as pessoas certas nunca estão na mesma sala. O SimulAI coloca elas lá.
 
 ---
 
@@ -11,6 +12,20 @@ O SimulAI é inspirado no [MiroFish](https://github.com/666ghj/MiroFish). Você 
 1. **Gera agentes** com personalidades, históricos e posições diversas
 2. **Simula debates** em múltiplas rodadas, onde os agentes interagem
 3. **Gera um relatório** com insights, previsões e recomendações
+
+## 💡 Por que o SimulAI é único?
+
+O valor real desta ferramenta está em simular conversas que **nunca aconteceriam na vida real** mas cujos resultados nos ajudam a tomar decisões melhores.
+
+## 🎬 Exemplos de Casos de uso reais possíveis de simular:
+
+| Cenário | O que torna impossível na vida real |
+|---------|-------------------------------------|
+| 🏥 **Município corta orçamento de saúde para investir em tecnologia** | Gestor de saúde, prefeito, paciente e engenheiro de TI jamais debatem isso abertamente |
+| 💰 **Empresa decide tornar público o salário de todos os funcionários** | RH, CEO, funcionário bem pago e mal pago nunca teriam essa conversa honesta na mesma sala |
+| 🚗 **Cidade proíbe carros no centro após as 18h** | Morador, entregador, dono de restaurante e ciclista têm interesses opostos e nunca se encontram |
+| 🏨 **Hospital usa IA para priorizar quem recebe leito de UTI** | Médico, familiar, gestor e filósofo de bioética nunca teriam esse debate abertamente |
+| 📱 **Escola pública bane celular inclusive fora do horário de aula** | Diretor, professor, aluno e pai nunca sentam juntos para decidir isso democraticamente |
 
 Tudo com interface visual amigável no navegador. 🖥️
 
